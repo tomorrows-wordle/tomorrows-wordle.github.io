@@ -86,7 +86,7 @@ p {
 @media (max-width: 1000px) {
    
    .others {
-      width: 3.75em;
+      width: 2.4em;
    }
    .others > .word {
       font-size: 0.65em;
