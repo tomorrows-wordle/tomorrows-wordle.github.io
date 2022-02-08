@@ -68,10 +68,28 @@ p {
    body {
       font-size: 50px;
    }
+   .others {
+      width: 3em;
+   }
+   .others > .word {
+      font-size: 0.65em;
+      margin-top: 1.75em;
+   }
 }
 
 @media (min-width: 1000px) {
    body {
       font-size: 100px;
+   }
+}
+
+@media (max-width: 1000px) {
+   
+   .others {
+      width: 4em;
+   }
+   .others > .word {
+      font-size: 0.65em;
+      margin-top: 1.75em;
    }
 }
