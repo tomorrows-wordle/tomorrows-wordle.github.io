@@ -69,7 +69,7 @@ p {
       font-size: 50px;
    }
    .others {
-      width: 3em;
+      width: 2em;
    }
    .others > .word {
       font-size: 0.65em;
@@ -86,7 +86,7 @@ p {
 @media (max-width: 1000px) {
    
    .others {
-      width: 4em;
+      width: 3.75em;
    }
    .others > .word {
       font-size: 0.65em;
