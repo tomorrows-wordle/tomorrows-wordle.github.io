@@ -3,25 +3,75 @@ body
    font-size: 75px;
    font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
+   color: white;
+   background-color: #222;
+   overflow: hidden;
  }
 
- .center {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+.wrapper {
+   position: relative;
    min-height: 100vh;
- }
+}
 
- @media (max-width: 400px) {
-   #tomorrow {
+.wrapper > * {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+
+#tomorrow {
+   transform: translate(-50%, -195%);
+   font-size: 1.1em;
+}
+
+.header {
+   font-family: "Lucida Console", "Courier New", monospace;
+   font-size: 0.3em;
+   position: absolute;
+}
+
+.others {
+   transform: translateX(-50%);
+   width: 5em;
+}
+
+.others > * {
+   position: absolute;
+}
+
+.others > .header {
+   margin-top: 2em;
+}
+
+#today,
+#today + .header {
+   left: 0;
+   transform: translateX(-50%);
+}
+
+#yesterday,
+#yesterday + .header {
+   right: 0;
+   transform: translateX(50%);
+}
+
+p {
+   width: max-content;
+}
+
+#tomorrow + .header {
+   transform: translate(-50%, -685%);
+}
+
+
+@media (max-width: 400px) {
+   body {
       font-size: 50px;
    }
 }
 
 @media (min-width: 1000px) {
-   #tomorrow {
+   body {
       font-size: 100px;
    }
 }

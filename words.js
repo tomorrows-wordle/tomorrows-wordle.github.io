@@ -2,8 +2,6 @@ var words = ["elder","frame","humor","pause","ulcer","ultra","robin","cynic","ag
 
 var index = Math.floor((new Date().getTime() - new Date("02/07/2022").getTime()) / (1000 * 3600 * 24));
 
-var yesterday = words[index - 1].toUpperCase();
-var today = words[index].toUpperCase();
-var tomorrow = words[index + 1].toUpperCase();
-
-document.getElementById("tomorrow").innerHTML = tomorrow;
+document.getElementById("tomorrow").innerHTML = words[index + 1].toUpperCase();
+document.getElementById("today").innerHTML = words[index].toUpperCase();
+document.getElementById("yesterday").innerHTML = words[index - 1].toUpperCase();
